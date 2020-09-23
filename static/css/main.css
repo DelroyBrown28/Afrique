@@ -1,0 +1,115 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.top_contents_section {
+    width: 100%;
+    height: 115px;
+    display: flex;
+
+
+}
+
+.top_title_banner {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.top_title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    opacity: 0.5;
+}
+
+.square_icon {
+    display: flex;
+    align-items: center;
+}
+
+.banner_links_section {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+
+.socials_sect {
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.socials_link {
+    color: #000;
+    font-weight: 500;
+
+    font-size: 20px;
+}
+
+/* ---Mid content section--- */
+
+.mid_content_section {
+    height: 80%;
+    width: 100%;
+    display: flex;
+
+    border: 1px solid red;
+}
+
+.left_block_mid_section {
+    background: #000;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+
+.artist_name {
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.exposition_text {
+    color: #fff;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 87px;
+}
+
+.buy_tickets_btn {
+    width: 440px;
+    height: 77px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+
+}
