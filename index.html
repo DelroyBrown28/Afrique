@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afrique</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/images/afrique_favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/afrique_favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/images/afrique_favicon.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -44,33 +48,98 @@
 
 
     <section class="mid_content_section">
+        <div class="buy_tickets_descrip_section">
+            <h3 class="buy_tickets_title">We'll need some details first.</h3>
+            <div class="row tickets_wrap">
+                <div class="col s12">
+                    <form class="row tickets_form">
+                        <div class="input-field col s12">
+                            <input type="text" id="username" class="form_inputs autocomplete">
+                            <label for="username">Your Name?</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="email" id="email" class="form_inputs autocomplete">
+                            <label for="email">Email Address?</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="email" id="contact" class="form_inputs autocomplete">
+                            <label for="contact">Contact Number?</label>
+                        </div>
+
+
+                        <!-- Ticket Cards -->
+                        <div class="ticket_cards_wrap">
+
+                            <div class="ticket_card">
+                                <p class="card_title"><img src="./static/images/square_points.png" class="card_icon"
+                                        alt="">
+                                    TATIANA MORRIS
+                                </p>
+                                <div class="tmorris_image"></div>
+                                <small class="date_time_event">28.11.2020</small>
+                                <p class="event_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Accusantium cum eveniet debitis, inventore molestias sed aut odit labore nobis
+                                    veniam?</p>
+                            </div>
+
+                            <div class="ticket_card">
+                                <p class="card_title"><img src="./static/images/square_points.png" class="card_icon"
+                                        alt="">
+                                    SONS OF KEMET
+                                </p>
+                                <div class="kemet_image"></div>
+                                <small class="date_time_event">28.11.2020</small>
+                                <p class="event_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Accusantium cum eveniet debitis, inventore molestias sed aut odit labore nobis
+                                    veniam?</p>
+                            </div>
+
+                            <div class="ticket_card">
+                                <p class="card_title"><img src="./static/images/square_points.png" class="card_icon"
+                                        alt="">
+                                    ERYKAH BADU
+                                </p>
+                                <div class="badu_image"></div>
+                                <small class="date_time_event">28.11.2020</small>
+                                <p class="event_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Accusantium cum eveniet debitis, inventore molestias sed aut odit labore nobis
+                                    veniam?</p>
+                            </div>
+
+                        </div>
+                        <button class="ticket_form_submit_btn"><em>Submit!</em></button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
         <div class="left_block_mid_section">
-            <h2 class="artist_name">
+            <h2 class="fade_out artist_name">
                 <span class="line_icon">
                     <img style="opacity: 0.7;" src="./static/images/2_lines.png" alt="">
                 </span>
                 TATIANA MORRIS
             </h2>
-            <h1 class="exposition_text">
+            <h1 class="fade_out exposition_text">
                 EXPOSITION<br>PHOTOS
             </h1>
-            <button class="buy_tickets_btn"><em>Buy tickets...</em></button>
-            <div class="date_time_text">
-                <p>22:00</p>
-                <p>28.11.2020</p>
+            <button class="fade_out buy_tickets_btn"><em>Buy tickets...</em></button>
+            <div class="fade_out date_time_text">
+                <p class="time_text">22:00</p>
+                <p class="location_text">Stolen Space Gallery<br>17 Osborn St, Shadwell, London</p>
+                <p class="date_text">28.11.2020</p>
             </div>
         </div>
-
-        <div class="image_section">
+        <div class="buy_tickets_section">
         </div>
-
-
-
+        <div class="tatianaM_image"></div>
     </section>
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./static/javascript/script.js"></script>
 </body>

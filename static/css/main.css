@@ -7,6 +7,7 @@ html {
     padding: 5px 20px;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -76,19 +77,37 @@ html {
 /* ---Mid content section--- */
 
 .mid_content_section {
+    position: relative;
     height: 80%;
     width: 100%;
     display: flex;
+
 
 }
 
 .left_block_mid_section {
     background: #000;
     height: 100%;
-    width: 55%;
+    width: 65%;
     display: flex;
     flex-flow: column;
     padding: 20px;
+    z-index: 2;
+}
+
+.buy_tickets_descrip_section {
+    border: 2px solid #000;
+    width: 0;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.buy_tickets_title {
+    font-weight: 200;
 }
 
 .artist_name {
@@ -125,23 +144,178 @@ html {
 
 .date_time_text p {
     margin: 0;
-    font-size: 90px;
-    font-weight: 100;
     font-family: 'Poppins', sans-serif;
 
 }
 
+.time_text,
+.date_text {
+    font-size: 90px;
+    font-weight: 100;
+
+}
+
+.location_text {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: right;
+}
+
 /* ---Left image section--- */
 
-.image_section {
+
+.tatianaM_image {
     background: url(/static/images/pexels-jeremy-bishop-2710131.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    object-fit: cover;
     filter: grayscale(100);
-    width: 40%;
+    width: 34%;
     height: 100%;
+    margin-left: auto;
 
 }
 
+
+.buy_tickets_section {
+    background: url(/static/images/pexels-eric-esma-894156.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100);
+    position: absolute;
+    border: 2px solid #000;
+    width: 34%;
+    height: 0;
+    right: 0;
+
+}
+
+.buy_tickets_btn:active {
+    background-color: transparent;
+}
+
+/* ---Buy tickets form--- */
+
+.form_inputs {
+    width: 100% !important;
+    margin: 0 !important;
+
+}
+
+.tickets_wrap {
+    height: 100%;
+    width: 50%;
+    display: flex;
+
+}
+
+.tickets_form {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+
+}
+
+.ticket_form_submit_btn {
+    width: 50%;
+    height: 50px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    background: transparent;
+    border: 2px solid #000;
+
+}
+
+.ticket_cards_wrap {
+    height: 300px;
+    display: flex;
+
+}
+
+.ticket_card {
+    width: calc(100% / 3);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.ticket_card:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.card_icon {
+    margin-right: 5px;
+    height: 13px;
+}
+
+.card_title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.tmorris_image {
+    background: url(/static/images/pexels-jeremy-bishop-2710131.jpg);
+}
+
+.kemet_image {
+    background: url(/static/images/sonsofkemt.jpg);
+}
+
+.badu_image {
+    background: url(/static/images/erykahbadu.jpg);
+}
+
+
+.tmorris_image,
+.kemet_image,
+.badu_image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100);
+    margin-top: 5px;
+    height: 100px;
+}
+
+
+.date_time_event {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.event_description {
+    font-size: 13px;
+}
+
+
+
+@media (max-width : 1533px) {
+
+    .date_time_text {
+        height: 100%;
+        flex-flow: column;
+        justify-content: unset;
+
+    }
+
+    .date_time_text p {
+        width: 100%;
+        text-align: left;
+    }
+
+
+}
